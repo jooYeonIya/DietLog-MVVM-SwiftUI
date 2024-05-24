@@ -11,6 +11,9 @@
 		0A978E952BFF6879008D69FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A978E942BFF6879008D69FC /* ContentView.swift */; };
 		0A978E972BFF687B008D69FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A978E962BFF687B008D69FC /* Assets.xcassets */; };
 		0A978E9A2BFF687B008D69FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A978E992BFF687B008D69FC /* Preview Assets.xcassets */; };
+		0A978EA62BFF6CF4008D69FC /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A978EA52BFF6CF4008D69FC /* TopView.swift */; };
+		0A978EA82BFF7D93008D69FC /* LeftText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A978EA72BFF7D93008D69FC /* LeftText.swift */; };
+		0A978EAB2BFF7E2D008D69FC /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A978EAA2BFF7E2D008D69FC /* LocalizedText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		0A978E942BFF6879008D69FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A978E962BFF687B008D69FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A978E992BFF687B008D69FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A978EA52BFF6CF4008D69FC /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		0A978EA72BFF7D93008D69FC /* LeftText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftText.swift; sourceTree = "<group>"; };
+		0A978EAA2BFF7E2D008D69FC /* LocalizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,10 @@
 		0A978E912BFF6879008D69FC /* DietLog-MVVM-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0A978EA22BFF6CC1008D69FC /* Model */,
+				0A978EA12BFF6CBB008D69FC /* ViewModel */,
+				0A978EA02BFF6CB0008D69FC /* View */,
+				0A978EA42BFF6CCC008D69FC /* Global */,
 				0A978E922BFF6879008D69FC /* DietLog_MVVM_SwiftUIApp.swift */,
 				0A978E942BFF6879008D69FC /* ContentView.swift */,
 				0A978E962BFF687B008D69FC /* Assets.xcassets */,
@@ -65,6 +75,53 @@
 				0A978E992BFF687B008D69FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A978EA02BFF6CB0008D69FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A978EA12BFF6CBB008D69FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A978EA22BFF6CC1008D69FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A978EA32BFF6CC6008D69FC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0A978EA52BFF6CF4008D69FC /* TopView.swift */,
+				0A978EA72BFF7D93008D69FC /* LeftText.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0A978EA42BFF6CCC008D69FC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				0A978EA92BFF7E0F008D69FC /* Text */,
+				0A978EA32BFF6CC6008D69FC /* Utils */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		0A978EA92BFF7E0F008D69FC /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				0A978EAA2BFF7E2D008D69FC /* LocalizedText.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A978EAB2BFF7E2D008D69FC /* LocalizedText.swift in Sources */,
 				0A978E952BFF6879008D69FC /* ContentView.swift in Sources */,
+				0A978EA82BFF7D93008D69FC /* LeftText.swift in Sources */,
+				0A978EA62BFF6CF4008D69FC /* TopView.swift in Sources */,
 				0A978E932BFF6879008D69FC /* DietLog_MVVM_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
